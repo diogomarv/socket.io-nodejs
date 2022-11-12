@@ -1,0 +1,22 @@
+{
+  "name": "socket.io-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diogomarv/socket.io-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diogomarv/socket.io-nodejs/issues"
+  },
+  "homepage": "https://github.com/diogomarv/socket.io-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
