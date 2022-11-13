@@ -41,6 +41,14 @@
       window.scrollTo(0, document.body.scrollHeight);
     });
 
+    // show message when some user connect
+    socket.on('user_connected', () => {
+      var item = document.createElement('li');
+      item.textContent = 'User connected';
+      messages.appendChild(item);
+      window.scrollTo(0, document.body.scrollHeight);
+    })
+
   </script>
 </body>
 

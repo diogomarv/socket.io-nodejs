@@ -12,9 +12,18 @@ app.get("/", (req, res) => {
 });
 
 io.on("connection", (socket) => {
+  
+  console.log('User connected')
+
+  io.emit("user_connected", true);
+
   socket.on("chat message", (msg) => {
     io.emit("chat message", msg);
   });
+
+  socket.on('disconnect', () => {
+    console.log('User disconnected')
+  })
 });
 
 server.listen(3000, () => {
